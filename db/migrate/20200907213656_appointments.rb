@@ -6,7 +6,6 @@ class Appointments < ActiveRecord::Migration[5.2]
       app.datetime :appointment_date
       app.datetime :appointment_time
       app.string :appointment_location
-      #app.string :appointment_note ask whether this should go here or in its own migration file
       app.timestamps
     end
   end
