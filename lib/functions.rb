@@ -181,6 +181,6 @@ end
 
 def patienthistories
     patid = $prompt.ask("Please privde the patient ID you wish to inquire about:")
-    Patient_History.where(patient_id: patid)
+    ap Patient_History.where(patient_id: patid)
     mainoptions
 end
