@@ -10,7 +10,7 @@ def usertype
 end
 
 def patientinfo
-    patgreeting = $prompt.ask("We have a few questions about your personal info. 
+    patgreeting = puts ("We have a few questions about your personal info. 
     (Don't worry your information is safe with us, only you have access to it!)")
     patname = $prompt.ask("What is your name?")
     #patusername = $prompt.ask("Welcome, #{patname}. Please create a username:")
@@ -30,14 +30,14 @@ def patientinfo
 end
 
 def doctorinfo
-    docgreeting = $prompt.ask("We have a few questions about your professional info. (Don't worry your information is safe with us, only you have access to it!)")
+    docgreeting = puts "We have a few questions about your professional info. (Don't worry your information is safe with us, only you have access to it!)"
     docname = $prompt.ask("What is your name?")
     #docusername = $prompt.ask("Welcome, #{docname}. Please create a username:")
     # p "Username: #{docusername}"
     #docpassword = $prompt.mask("Please create a password:")
     #p "Password: #{docpassword}"
     docspecialty = $prompt.ask("What is your specialty?")
-    doclocation = $prompt.ask("Where is your practice located? (Ex: 'City' NOTE: This is case sensitive")
+    doclocation = $prompt.ask("Where is your practice located? (Ex: 'City' NOTE: This is case sensitive)")
     docyrs_experience = $prompt.ask("How many years of experience do you have in your profession?")
 
     Doctor.create(name: docname, specialty: docspecialty, location: doclocation, yrs_experience: docyrs_experience)
@@ -140,8 +140,8 @@ def appnotes
     option = $prompt.select("Would you like to read this appointment note or update this appointment note:", choices)
 
     if option == 1
-        appnote = Appointment_Note.find_by(appointment_id: appid).note
-        p appnote
+        appnote = Appointment_Note.find_by(appointment_id: appid)
+        ap appnote
         mainoptions
     else
         newnote = $prompt.ask("Please specify what you would like the updated note to read:")
