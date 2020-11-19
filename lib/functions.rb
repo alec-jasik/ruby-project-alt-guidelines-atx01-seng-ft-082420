@@ -10,7 +10,7 @@ def usertype
 end
 
 def patientinfo
-    patgreeting = puts ("We have a few questions about your personal info. 
+    patgreeting = $prompt.ask("We have a few questions about your personal info. 
     (Don't worry your information is safe with us, only you have access to it!)")
     patname = $prompt.ask("What is your name?")
     #patusername = $prompt.ask("Welcome, #{patname}. Please create a username:")
@@ -30,7 +30,7 @@ def patientinfo
 end
 
 def doctorinfo
-    docgreeting = puts "We have a few questions about your professional info. (Don't worry your information is safe with us, only you have access to it!)"
+    docgreeting = $prompt.ask("We have a few questions about your professional info. (Don't worry your information is safe with us, only you have access to it!)")
     docname = $prompt.ask("What is your name?")
     #docusername = $prompt.ask("Welcome, #{docname}. Please create a username:")
     # p "Username: #{docusername}"

@@ -1,5 +1,15 @@
-APPointment Lite README:
+# APPointment Lite
 
+# App Description:
+APPointment Lite is a basic CLI application that allows doctors and patients to create, update and delete appointments with eachother.
+
+# Technical Description: 
+A basic Ruby CLI App with CRUD functions:
+* Object Relational Mapping (with ActiveRecord)
+* SQL Databases (using sqlite3)
+* Object Orientation Models (via Ruby)
+
+# Instructions:
 To install our project, please clone off of github.
 
 Before running the application, make sure to run 'bundle install' in your terminal to make sure you have the necessary gems installed!
@@ -11,4 +21,4 @@ NOTE: If prompted to type something, please pay attention to the hints provided 
 
 When you are finished with what you want to do select the 'I'm all done' button and follow the instructions to successfully exit out of the application.
 
-Thanks for using APPointment Lite! Have nice day.
+# Thank you!  Created by: Jaden Locke and Alec Jasik
