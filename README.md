@@ -3,6 +3,7 @@
 # App Description:
 APPointment Lite is a basic CLI application that allows doctors and patients to create, update and delete appointments with eachother.
 
+
 # Technical Description: 
 A basic Ruby CLI App with CRUD functions:
 * Object Relational Mapping (with ActiveRecord)
